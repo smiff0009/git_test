@@ -29,4 +29,17 @@ btn.addEventListener('click', function(){
     person.innerText = quotes[random].person;
 })
 
-console.log("Hello World")
+console.log("Hello World");
+let computerChoice = Math.floor(Math.random()*3)+1;
+function getComputerChoice() {
+     if (computerChoice === 1) {
+        return "rock"
+     }
+     else if (computerChoice === 2) {
+        return "paper"
+     }
+     else {
+        return "scissors"
+     }
+};
+console.log(getComputerchoice);
