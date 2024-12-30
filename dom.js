@@ -70,37 +70,37 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
     let lowerHumanChoice = humanChoice.toLowerCase();
     if (lowerHumanChoice === "rock" && computerChoice === "rock"){
-        console.log("It's a tie! Replay the game!")
+        console.log("It's a tie! Replay the game!");
     }
     else if (lowerHumanChoice === "rock" && computerChoice ==="paper") {
-        console.log("You lose! Paper beats rock!")
-        computerScore++
+        console.log("You lose! Paper beats rock!");
+        computerScore++;
     }
     else if (lowerHumanChoice === "rock" && computerChoice ==="scissors") {
-        return "You win! Rock beats scissors!"
-        humanScore++
+        return "You win! Rock beats scissors!";
+        humanScore++;
     }
     else if (lowerHumanChoice === "paper" && computerChoice ==="rock") {
-        return "You win! Paper beats rock!"
-        humanScore++
+        return "You win! Paper beats rock!";
+        humanScore++;
     }
     else if (lowerHumanChoice === "paper" && computerChoice ==="paper") {
-        return "It's a tie! Replay the game!"
+        return "It's a tie! Replay the game!";
     }
     else if (lowerHumanChoice === "paper" && computerChoice ==="scissors") {
-        return "You lose! Scissors beats paper!"
-        computerScore++
+        return "You lose! Scissors beats paper!";
+        computerScore++;
     }
     else if (lowerHumanChoice === "scissors" && computerChoice ==="rock") {
-        return "You lose! Rock beats scissors!"
-        computerScore++
+        return "You lose! Rock beats scissors!";
+        computerScore++;
     }
     else if (lowerHumanChoice === "scissors" && computerChoice ==="paper") {
-        return "You win! Scissors beats paper!"
-        humanScore++
+        return "You win! Scissors beats paper!";
+        humanScore++;
     }
     else if (lowerHumanChoice === "scissors" && computerChoice ==="scissors") {
-        return "It's a tie! Replay the game!"
+        return "It's a tie! Replay the game!";
     }
 }
 
