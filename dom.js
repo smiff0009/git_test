@@ -42,7 +42,7 @@ function getComputerChoice() {
         return "scissors"
      }
 };
-
+let computerChoice = getComputerChoice(randomNumber);
 console.log(getComputerChoice(randomNumber));
 
 function getHumanChoice () {
@@ -61,3 +61,45 @@ function getHumanChoice () {
 }
 let humanChooses = getHumanChoice();
 console.log(humanChooses);
+
+/* score variables */
+let humanScore = 0;
+let computerScore = 0;
+
+/* single round function */
+function playRound(humanChoice, computerChoice) {
+    let lowerHumanChoice = humanChoice.toLowerCase();
+    if (lowerHumanChoice === "rock" && computerChoice === "rock"){
+        return "It's a tie! Replay the game!"
+    }
+    else if (lowerHumanChoice === "rock" && computerChoice ==="paper") {
+        return "You lose! Paper beats rock!"
+        computerScore++
+    }
+    else if (lowerHumanChoice === "rock" && computerChoice ==="scissors") {
+        return "You win! Rock beats scissors!"
+        humanScore++
+    }
+    else if (lowerHumanChoice === "paper" && computerChoice ==="rock") {
+        return "You win! Paper beats rock!"
+        humanScore++
+    }
+    else if (lowerHumanChoice === "paper" && computerChoice ==="paper") {
+        return "It's a tie! Replay the game!"
+    }
+    else if (lowerHumanChoice === "paper" && computerChoice ==="scissors") {
+        return "You lose! Scissors beats paper!"
+        computerScore++
+    }
+    else if (lowerHumanChoice === "scissors" && computerChoice ==="rock") {
+        return "You lose! Rock beats scissors!"
+        computerScore++
+    }
+    else if (lowerHumanChoice === "scissors" && computerChoice ==="paper") {
+        return "You win! Scissors beats paper!"
+        humanScore++
+    }
+    else if (lowerHumanChoice === "scissors" && computerChoice ==="scissors") {
+        return "It's a tie! Replay the game!"
+    }
+}
