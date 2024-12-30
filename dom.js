@@ -46,6 +46,7 @@ function getComputerChoice() {
 console.log(getComputerChoice(randomNumber));
 
 function getHumanChoice () {
-    let humanChoice = prompt("Please choose rock, paper, or scissors")
+    let humanChoice = prompt("Please choose rock, paper, or scissors");
+    return humanChoice.toLowerCase;
 }
 console.log(getHumanChoice());
