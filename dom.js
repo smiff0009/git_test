@@ -47,8 +47,8 @@ console.log(getComputerChoice(randomNumber));
 
 function getHumanChoice () {
     let humanChoice = prompt("Please choose rock, paper, or scissors");
-    if (humanChoice.toLowerCase = "rock" || "paper" || "scissors") {
-    return humanChoice.toLowerCase
+    if (humanChoice.toLowerCase() = "rock" || "paper" || "scissors") {
+    return humanChoice.toLowerCase()
     }
     else
     return "not a valid choice!"
