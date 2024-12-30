@@ -107,5 +107,6 @@ function playRound(humanChoice, computerChoice) {
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+let roundResults = playRound(humanSelection, computerSelection);
+console.log(roundResults);
 console.log(humanScore);
