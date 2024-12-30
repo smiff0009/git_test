@@ -44,3 +44,8 @@ function getComputerChoice() {
 };
 
 console.log(getComputerChoice(randomNumber));
+
+function getHumanChoice () {
+    let humanChoice = prompt("Please choose rock, paper, or scissors")
+}
+console.log(getHumanChoice());
