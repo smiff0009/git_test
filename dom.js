@@ -70,10 +70,10 @@ let computerScore = 0;
 function playRound(humanChoice, computerChoice) {
     let lowerHumanChoice = humanChoice.toLowerCase();
     if (lowerHumanChoice === "rock" && computerChoice === "rock"){
-        return "It's a tie! Replay the game!"
+        console.log("It's a tie! Replay the game!")
     }
     else if (lowerHumanChoice === "rock" && computerChoice ==="paper") {
-        return "You lose! Paper beats rock!"
+        console.log("You lose! Paper beats rock!")
         computerScore++
     }
     else if (lowerHumanChoice === "rock" && computerChoice ==="scissors") {
