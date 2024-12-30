@@ -103,3 +103,5 @@ function playRound(humanChoice, computerChoice) {
         return "It's a tie! Replay the game!"
     }
 }
+
+console.log(humanScore);
