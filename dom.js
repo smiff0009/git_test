@@ -49,4 +49,5 @@ function getHumanChoice () {
     let humanChoice = prompt("Please choose rock, paper, or scissors");
     return humanChoice.toLowerCase;
 }
-console.log(getHumanChoice());
+let humanChooses = getHumanChoice();
+console.log(humanChooses);
