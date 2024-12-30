@@ -30,16 +30,17 @@ btn.addEventListener('click', function(){
 })
 
 console.log("Hello World");
-let computerChoice = Math.floor(Math.random()*3)+1;
+let randomNumber = Math.floor(Math.random()*3)+1;
 function getComputerChoice() {
-     if (computerChoice === 1) {
+     if (randomNumber === 1) {
         return "rock"
      }
-     else if (computerChoice === 2) {
+     else if (randomNumber === 2) {
         return "paper"
      }
      else {
         return "scissors"
      }
 };
-console.log(getComputerChoice);
+
+console.log(getComputerChoice(randomNumber));
