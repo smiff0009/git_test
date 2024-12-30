@@ -50,4 +50,4 @@ function getHumanChoice () {
     return humanChoice;
 }
 let humanChooses = getHumanChoice();
-console.log(humanChooses);
+console.log(humanChooses.toLowerCase);
