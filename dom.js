@@ -67,7 +67,6 @@ function getHumanChoice () {
     return "not a valid choice!"
     }
 }
-console.log(getHumanChoice());
 
 /*let humanChoice = getHumanChoice();*/
 
@@ -83,15 +82,15 @@ let computerScore = 0;
 
 /* Switch Statement */
 function playRound(humanChoice, computerChoice) {
-    let humanChoice = getHumanChoice();
-    let computerChoice = getComputerChoice();
 switch(humanChoice) {
     case "rock": 
     if(computerChoice === "paper") {
         return "You lose! Paper beats rock";
+        computerScore++;
     }
     else if(computerChoice === "scissors") {
         return "You win! Rock beats scissors";
+        humanScore++;
     }
     else {
         return "It's a tie! Play again!";
@@ -99,9 +98,11 @@ switch(humanChoice) {
     case "paper": 
     if(computerChoice === "rock") {
         return "You win! Paper beats rock";
+        humanScore++;
     }
     else if(computerChoice === "scissors") {
         return "You lose! Scissors beats rock";
+        computerScore++;
     }
     else {
         return "It's a tie! Play again!";
@@ -109,9 +110,11 @@ switch(humanChoice) {
     case "scissors": 
     if(computerChoice === "rock") {
         return "You lose! Rock beats scissors";
+        computerScore++;
     }
     else if(computerChoice === "paper") {
         return "You win! Scissors beats paper";
+        humanScore++;
     }
     else {
         return "It's a tie! Play again!";
@@ -157,7 +160,7 @@ function playRound(humanChoice, computerChoice) {
 }
     */
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+const humanChoice = getHumanChoice();
+const computerChoice = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+console.log(playRound(humanChoice, computerChoice));
