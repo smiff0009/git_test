@@ -30,8 +30,9 @@ btn.addEventListener('click', function(){
 })
 
 
-let randomNumber = Math.floor(Math.random()*3)+1;
+
 function getComputerChoice() {
+    let randomNumber = Math.floor(Math.random()*3)+1;
      if (randomNumber === 1) {
         return "rock"
      }
@@ -42,7 +43,10 @@ function getComputerChoice() {
         return "scissors"
      }
 };
+/*
 let computerChoice = getComputerChoice(randomNumber);
+*/
+
 
 /*
 console.log(getComputerChoice(randomNumber));
@@ -59,10 +63,14 @@ function getHumanChoice () {
     else if (humanChoice.toLowerCase() === "scissors") {
             return humanChoice.toLowerCase()
             }    
-    else
+    else {
     return "not a valid choice!"
+    }
 }
-let humanChoice = getHumanChoice();
+console.log(getHumanChoice());
+
+/*let humanChoice = getHumanChoice();*/
+
 
 /*
 console.log(humanChooses);
