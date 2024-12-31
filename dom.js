@@ -83,6 +83,8 @@ let computerScore = 0;
 
 /* Switch Statement */
 function playRound(humanChoice, computerChoice) {
+    let humanChoice = getHumanChoice();
+    let computerChoice = getComputerChoice();
 switch(humanChoice) {
     case "rock": 
     if(computerChoice === "paper") {
@@ -158,6 +160,4 @@ function playRound(humanChoice, computerChoice) {
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-let roundResults = playRound(humanSelection, computerSelection);
-console.log(roundResults);
-console.log(humanScore);
+playRound(humanSelection, computerSelection);
