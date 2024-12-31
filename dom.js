@@ -29,7 +29,7 @@ btn.addEventListener('click', function(){
     person.innerText = quotes[random].person;
 })
 
-console.log("Hello World");
+
 let randomNumber = Math.floor(Math.random()*3)+1;
 function getComputerChoice() {
      if (randomNumber === 1) {
@@ -43,10 +43,13 @@ function getComputerChoice() {
      }
 };
 let computerChoice = getComputerChoice(randomNumber);
+
+/*
 console.log(getComputerChoice(randomNumber));
+*/
 
 function getHumanChoice () {
-    let humanChoice = prompt("Please choose rock, paper, or scissors");
+    prompt("Please choose rock, paper, or scissors");
     if (humanChoice.toLowerCase() === "rock") {
     return humanChoice.toLowerCase()
     }
@@ -60,13 +63,52 @@ function getHumanChoice () {
     return "not a valid choice!"
 }
 let humanChooses = getHumanChoice();
+
+/*
 console.log(humanChooses);
+*/
 
 /* score variables */
 let humanScore = 0;
 let computerScore = 0;
 
-/* single round function */
+
+/* Switch Statement */
+function playRound(humanChoice, computerChoice) {
+switch(humanChoice) {
+    case "rock": 
+    if(computerChoice === "paper") {
+        return "You lose! Paper beats rock";
+    }
+    else if(computerChoice === "scissors") {
+        return "You win! Rock beats scissors";
+    }
+    else {
+        return "It's a tie! Play again!";
+    }
+    case "paper": 
+    if(computerChoice === "rock") {
+        return "You win! Paper beats rock";
+    }
+    else if(computerChoice === "scissors") {
+        return "You lose! Scissors beats rock";
+    }
+    else {
+        return "It's a tie! Play again!";
+    }
+    case "scissors": 
+    if(computerChoice === "rock") {
+        return "You lose! Rock beats scissors";
+    }
+    else if(computerChoice === "paper") {
+        return "You win! Scissors beats paper";
+    }
+    else {
+        return "It's a tie! Play again!";
+    }
+}
+}
+/* single round function
 function playRound(humanChoice, computerChoice) {
     let lowerHumanChoice = humanChoice.toLowerCase();
     if (lowerHumanChoice === "rock" && computerChoice === "rock"){
@@ -103,6 +145,7 @@ function playRound(humanChoice, computerChoice) {
         return "It's a tie! Replay the game!";
     }
 }
+    */
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
