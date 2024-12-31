@@ -62,7 +62,7 @@ function getHumanChoice () {
     else
     return "not a valid choice!"
 }
-let humanChooses = getHumanChoice();
+let humanChoice = getHumanChoice();
 
 /*
 console.log(humanChooses);
