@@ -51,6 +51,8 @@ let computerChoice = getComputerChoice(randomNumber);
 /*
 console.log(getComputerChoice(randomNumber));
 */
+const humanChoice = getHumanChoice();
+const computerChoice = getComputerChoice();
 
 function getHumanChoice () {
     prompt("Please choose rock, paper, or scissors");
@@ -160,7 +162,6 @@ function playRound(humanChoice, computerChoice) {
 }
     */
 
-const humanChoice = getHumanChoice();
-const computerChoice = getComputerChoice();
+
 
 console.log(playRound(humanChoice, computerChoice));
