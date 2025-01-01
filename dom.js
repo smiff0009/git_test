@@ -55,8 +55,10 @@ console.log(getComputerChoice(randomNumber));
 const humanSelection = getHumanChoice();
 const computerChoice = getComputerChoice();
 
+let humanChoice = prompt("Please choose rock, paper, or scissors");
+
 function getHumanChoice () {
-    let humanChoice = prompt("Please choose rock, paper, or scissors");
+    
     if (humanChoice.toLowerCase() === "rock") {
     return humanChoice.toLowerCase()
     }
@@ -166,4 +168,4 @@ function playRound(humanChoice, computerChoice) {
 
 
 
-console.log(playRound(humanChoice, computerChoice));
+console.log(playRound(humanSelection, computerChoice));
