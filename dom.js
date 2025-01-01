@@ -88,7 +88,7 @@ console.log(humanChooses);
 
 /* Switch Statement */
 function playRound(humanSelection, computerChoice) {
-switch(humanChoice) {
+switch(humanSelection) {
     case "rock": 
     if(computerChoice === "paper") {
         return "You lose! Paper beats rock";
