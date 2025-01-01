@@ -56,7 +56,7 @@ const humanSelection = getHumanChoice();
 const computerChoice = getComputerChoice();
 
 function getHumanChoice () {
-    let humanChoice = prompt("Please choose rock, paper, or scissors").toLowerCase;
+    let humanChoice = prompt("Please choose rock, paper, or scissors");
     if (humanChoice.toLowerCase() === "rock") {
     return humanChoice.toLowerCase()
     }
@@ -85,7 +85,7 @@ console.log(humanChooses);
 
 
 /* Switch Statement */
-function playRound(humanChoice, computerChoice) {
+function playRound(humanSelection, computerChoice) {
 switch(humanChoice) {
     case "rock": 
     if(computerChoice === "paper") {
