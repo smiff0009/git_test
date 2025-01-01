@@ -52,11 +52,11 @@ let computerChoice = getComputerChoice(randomNumber);
 /*
 console.log(getComputerChoice(randomNumber));
 */
-const humanChoice = getHumanChoice();
+const humanSelection = getHumanChoice();
 const computerChoice = getComputerChoice();
 
 function getHumanChoice () {
-    prompt("Please choose rock, paper, or scissors");
+    let humanChoice = prompt("Please choose rock, paper, or scissors").toLowerCase;
     if (humanChoice.toLowerCase() === "rock") {
     return humanChoice.toLowerCase()
     }
