@@ -29,7 +29,8 @@ btn.addEventListener('click', function(){
     person.innerText = quotes[random].person;
 })
 
-
+let humanScore = 0;
+let computerScore = 0;
 
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random()*3)+1;
@@ -51,8 +52,7 @@ let computerChoice = getComputerChoice(randomNumber);
 /*
 console.log(getComputerChoice(randomNumber));
 */
-const humanChoice = getHumanChoice();
-const computerChoice = getComputerChoice();
+
 
 function getHumanChoice () {
     prompt("Please choose rock, paper, or scissors");
@@ -70,6 +70,9 @@ function getHumanChoice () {
     }
 }
 
+const humanChoice = getHumanChoice();
+const computerChoice = getComputerChoice();
+
 /*let humanChoice = getHumanChoice();*/
 
 
@@ -78,8 +81,7 @@ console.log(humanChooses);
 */
 
 /* score variables */
-let humanScore = 0;
-let computerScore = 0;
+
 
 
 /* Switch Statement */
